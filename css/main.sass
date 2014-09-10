@@ -1,0 +1,109 @@
+---
+---
+
+$base-unit: 1em
+
+$header-font: 'Myriad Pro', Helvetica, Arial, sans-serif
+$paragraph-font: Georgia, 'Times New Roman', Times, serif
+
+$black: #333332
+$blue: #036
+$white: #FFF
+$red: #F60
+$dark-red: darken($red, 20%)
+$grey: lighten($black, 50%)
+$dark-grey: darken($grey, 30%)
+
+$bp-medium : 43.75em
+$bp-large : 56.25em
+$bp-extra-large : 90em
+
+body
+  color: $black
+  font-family: $paragraph-font
+  font-size: $base-unit
+  line-height: $base-unit * 1.25
+  margin: 0 auto
+  width: 94%
+
+header
+  overflow: hidden
+  padding: $base-unit 0
+
+footer
+  color: $grey
+  font-size: $base-unit * 0.75
+  text-align: center
+  margin-bottom: $base-unit
+
+h1, h2, h4
+  font-family: $header-font
+  font-weight: bold
+
+h1 a
+  color: $black
+
+h1
+  font-size: $base-unit * 2
+  line-height: $base-unit * 1.25
+
+h2
+  font-size: $base-unit * 1.625
+  line-height: $base-unit * 1.15384615
+
+h4
+  font-size: $base-unit * 1.125
+  line-height: $base-unit * 1.11111111
+  padding-top: $base-unit * 2
+
+p
+  padding-top: $base-unit
+
+a
+  color: $red
+  text-decoration: none
+  &:hover
+    color: $dark-red
+
+@media all and (min-width: $bp-medium)
+
+  body
+    width: 88%
+
+@media all and (min-width: $bp-large)
+
+  body
+    line-height: $base-unit * 1.375
+    width: 90%
+    max-width: $bp-extra-large * 0.85
+
+  h1
+    font-size: $base-unit * 2.5
+    line-height: $base-unit * 1.125
+
+  h2
+    font-size: $base-unit * 2
+    line-height: $base-unit * 1.25
+
+  h4
+    font-size: $base-unit * 1.125
+    line-height: $base-unit * 1.22222222
+
+@media all and (min-width: $bp-extra-large)
+
+  body
+    line-height: $base-unit * 1.375
+    width: 90%
+    max-width: $bp-extra-large * 1.5
+
+  h1
+    font-size: $base-unit * 2.5
+    line-height: $base-unit * 1.125
+
+  h2
+    font-size: $base-unit * 2
+    line-height: $base-unit * 1.25
+
+  h4
+    font-size: $base-unit * 1.125
+    line-height: $base-unit * 1.22222222

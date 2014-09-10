@@ -1,0 +1,17 @@
+## Site author's information.
+author:
+  name:      Alberto Peña Abril
+  title:     Software Developer
+  email:     plagelao@gmail.com
+  site:      http://plagelao.com
+  location:  "Oxford, UK"
+  gh:
+    user:    plagelao
+  twitter:   plagelao
+
+highlighter: true
+url: http://plagelao.com
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed
